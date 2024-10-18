@@ -23,8 +23,18 @@ document.getElementById('start-btn').addEventListener('click', function() {
             .then(data => {
                 // Procesar los datos de búsqueda
                 document.getElementById('loading-screen').style.display = 'none';
-                // Simulamos la búsqueda (aquí puedes añadir lógica real)
-                document.getElementById('result').innerText = 'Búsqueda completada. Resultados:\n' + data;
+                
+                // Simulamos la búsqueda automática
+                var missions = data.split('\n');
+                var results = [];
+
+                missions.forEach(mission => {
+                    // Aquí puedes añadir lógica adicional para manejar cada misión
+                    results.push('Buscando: ' + mission.trim());
+                });
+
+                // Mostrar los resultados
+                document.getElementById('result').innerText = 'Búsqueda completada. Resultados:\n' + results.join('\n');
             })
             .catch(error => {
                 document.getElementById('loading-screen').style.display = 'none';
