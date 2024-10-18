@@ -1,35 +1,37 @@
-document.getElementById('start-btn').addEventListener('click', function() {
-    var user = document.getElementById('user').value;
-    var pass = document.getElementById('pass').value;
+document.getElementById('start-btn').addEventListener('click', function () {
+    const user = document.getElementById('user').value;
+    const pass = document.getElementById('pass').value;
 
-    if (!user || !pass) {
-        alert('Por favor ingresa tu usuario y contraseña.');
+    // Simular el inicio de sesión (puedes agregar tu lógica aquí)
+    if (user === '' || pass === '') {
+        alert('Por favor, ingresa tu usuario y contraseña.');
         return;
     }
 
     // Mostrar pantalla de carga
     document.getElementById('loading-screen').style.display = 'block';
 
-    // Cargar el archivo de búsqueda
-    fetch('busqueda.txt')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error('Error al cargar el archivo.');
-            }
-            return response.text();
-        })
-        .then(data => {
-            document.getElementById('loading-screen').style.display = 'none';
-            var missions = data.split('\n').map(m => m.trim()).filter(m => m); // Filtrar líneas vacías
-            displayResults(missions);
-        })
-        .catch(error => {
-            document.getElementById('loading-screen').style.display = 'none';
-            document.getElementById('result').innerText = 'Error: ' + error.message;
-        });
+    // Simulación de búsqueda después de "iniciar sesión"
+    setTimeout(() => {
+        // Cargar el archivo busqueda.txt
+        fetch('busqueda.txt')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Error al cargar el archivo.');
+                }
+                return response.text();
+            })
+            .then(data => {
+                // Mostrar los resultados
+                const lines = data.split('\n').filter(line => line.trim() !== ''); // Eliminar líneas vacías
+                document.getElementById('result').innerText = 'Búsqueda completada. Resultados:\n' + lines.join('\n');
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error.message;
+            })
+            .finally(() => {
+                // Ocultar pantalla de carga
+                document.getElementById('loading-screen').style.display = 'none';
+            });
+    }, 1000); // Simular un tiempo de espera para el inicio de sesión
 });
-
-function displayResults(missions) {
-    var results = missions.map((mission, index) => `${index + 1}. ${mission}`).join('\n');
-    document.getElementById('result').innerText = 'Búsqueda completada. Resultados:\n' + results;
-}
