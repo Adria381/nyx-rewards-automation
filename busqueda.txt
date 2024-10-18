@@ -1,0 +1,100 @@
+1. Desarrollo de software
+2. Inteligencia artificial
+3. Lenguajes de programación (Python, JavaScript, etc.)
+4. Algoritmos de búsqueda
+5. Desarrollo web (HTML, CSS, JavaScript)
+6. Frameworks de desarrollo (React, Angular, Django)
+7. Bases de datos (SQL, NoSQL)
+8. API y RESTful services
+9. Seguridad informática
+10. Criptografía
+11. Blockchain y criptomonedas
+12. Realidad aumentada (AR)
+13. Realidad virtual (VR)
+14. Desarrollo de videojuegos
+15. Motor de juegos (Unity, Unreal Engine)
+16. Aplicaciones móviles (iOS, Android)
+17. UX/UI design
+18. SEO (optimización para motores de búsqueda)
+19. Marketing digital
+20. Ciberseguridad
+21. Big Data y análisis de datos
+22. Machine learning
+23. Deep learning
+24. Robótica
+25. IoT (Internet de las cosas)
+26. Sistemas operativos (Linux, Windows)
+27. DevOps
+28. Contenedores (Docker, Kubernetes)
+29. Virtualización
+30. Herramientas de control de versiones (Git)
+31. Automatización de tareas
+32. Integración continua y entrega continua (CI/CD)
+33. Metodologías ágiles (Scrum, Kanban)
+34. Gestión de proyectos
+35. Presentaciones efectivas
+36. Diseño gráfico
+37. Edición de video
+38. Fotografía digital
+39. Técnicas de escritura creativa
+40. Cuidado de plantas
+41. Cocina y recetas
+42. Viajes y turismo
+43. Historia mundial
+44. Cultura pop
+45. Literatura clásica y contemporánea
+46. Cómics y novelas gráficas
+47. Música y teoría musical
+48. Instrumentos musicales
+49. Ejercicio y bienestar
+50. Meditación y mindfulness
+51. Técnicas de estudio
+52. Aprendizaje de idiomas
+53. Programas de intercambio cultural
+54. Voluntariado y trabajo comunitario
+55. Habilidades de comunicación
+56. Resolución de conflictos
+57. Ciencia y tecnología
+58. Física cuántica
+59. Astrobiología
+60. Ecología y medio ambiente
+61. Sostenibilidad
+62. Cambio climático
+63. Nutrición y dietética
+64. Habilidades para la vida
+65. Ahorro e inversión
+66. Finanzas personales
+67. Emprendimiento
+68. Desarrollo de carrera profesional
+69. Networking
+70. Currículum y entrevistas de trabajo
+71. Psicología y bienestar emocional
+72. Crianza y educación de niños
+73. Relaciones interpersonales
+74. Filosofía y ética
+75. Cultura y arte
+76. Danza y movimiento
+77. Teatro y actuación
+78. Técnicas de dibujo y pintura
+79. Artesanía y DIY (hazlo tú mismo)
+80. Moda y diseño de vestuario
+81. Cosméticos y cuidado personal
+82. Jardinería y paisajismo
+83. Coleccionismo (monedas, sellos, etc.)
+84. Aventuras al aire libre
+85. Deportes (fútbol, baloncesto, etc.)
+86. Ciencia ficción y fantasía
+87. Películas y series
+88. Animación y caricaturas
+89. Juegos de mesa y cartas
+90. Programación de robots
+91. Ciencias sociales
+92. Estadística y probabilidad
+93. Investigación científica
+94. Tendencias tecnológicas
+95. Patrimonio cultural
+96. Religión y espiritualidad
+97. Historia de la música
+98. Eventos y festivales
+99. Rutas y senderos
+100. Actividades de bienestar y autocuidado
