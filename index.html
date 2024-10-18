@@ -1,86 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyx Rewards Automation</title>
-    <style>body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-.container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    text-align: center;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-button {
-    width: 100%;
-    padding: 10px;
-    background: #5cb85c;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background: #4cae4c;
-}
-
-#loading-screen {
-    text-align: center;
-    font-size: 18px;
-    color: #666;
-}
-
-pre {
-    background: #f8f8f8;
-    padding: 10px;
-    border-radius: 4px;
-    overflow-x: auto;
-    white-space: pre-wrap;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis Juegos Flash</title>
+  <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Nyx Rewards Automation</h1>
-        <label for="user">Ingresa tu usuario:</label>
-        <input type="text" id="user" required>
-        
-        <label for="pass">Ingresa tu contraseña:</label>
-        <input type="password" id="pass" required>
-        
-        <button id="start-btn">Iniciar Búsqueda</button>
-        
-        <div id="loading-screen" style="display: none;">Cargando...</div>
-        <pre id="result"></pre>
-    </div>
+  <h1>Mis Juegos Flash</h1>
+  
+  <p>Selecciona un juego para jugar:</p>
+  <select id="gameSelect" onchange="loadGame()">
+    <option value="">Selecciona un juego</option>
+    <option value="juego1.swf">Juego 1</option>
+    <option value="juego2.swf">Juego 2</option>
+    <option value="juego3.swf">Juego 3</option>
+    <option value="juego4.swf">Juego 4</option>
+    <option value="juego5.swf">Juego 5</option>
+  </select>
 
-    <script src="script.js"></script>
+  <div id="gameContainer" style="margin-top: 20px;">
+    <embed id="gameEmbed" width="800" height="600">
+  </div>
+
+  <script>
+    function loadGame() {
+      var game = document.getElementById('gameSelect').value;
+      if (game) {
+        document.getElementById('gameEmbed').src = game;
+      }
+    }
+  </script>
 </body>
 </html>
