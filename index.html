@@ -3,28 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nyx Rewards Automation</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Nyx Rewards Automation</title>
 </head>
 <body>
     <div class="container">
         <h1>Nyx Rewards Automation</h1>
-        
         <label for="user">Ingresa tu usuario:</label>
-        <input type="text" id="user" placeholder="Usuario">
+        <input type="text" id="user" required>
 
         <label for="pass">Ingresa tu contraseña:</label>
-        <input type="password" id="pass" placeholder="Contraseña">
+        <input type="password" id="pass" required>
 
         <button id="start-btn">Iniciar Sesión y Realizar Misiones</button>
-
-        <div id="loading-screen" class="loading-screen" style="display: none;">
-            <img src="NYX.png" alt="Cargando...">
+        
+        <div id="loading-screen" class="loading">
+            <p>Cargando...</p>
         </div>
 
-        <div id="result" class="result"></div>
+        <div id="result"></div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
